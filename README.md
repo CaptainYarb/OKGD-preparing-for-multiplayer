@@ -1,6 +1,5 @@
 # OKGD-preparing-for-multiplayer
-[Aug 6th Presentation for Oklahoma Game Developers meetup](http://www.meetup.com/Oklahoma-Game-Developers/events/224288063/).a# OKGD-preparing-for-multiplayer
-[Aug 6th Presentation for Oklahoma Game Developers meetup](http://www.meetup.com/Oklahoma-Game-Developers/events/224288063/).
+[Aug 6th Presentation for Oklahoma Game Developers meetup](http://www.meetup.com/Oklahoma-Game-Developers/events/224288063/)
 
 The included files are seperated into two parts: demos and slides.
 
