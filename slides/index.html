@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Shower Presentation Engine</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=792, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="shower/themes/bright/styles/screen.css">
+	<link rel="stylesheet" href="highlight/styles/default.css">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body class="list">
+	<header class="caption">
+		<h1>Preparing for Multiplayer</h1>
+		<p>by Jonathan Yarbor</p>
+	</header>
+	<section class="slide cover" id="Cover">
+		<h2>Preparing for Multiplayer</h2>
+		<p>by Jonathan Yarbor</p>
+	</section>
+	<section class="slide"><div>
+		<div class="whoami">
+			<strong style="font-size: 46px;">Jonathan Yarbor</strong><br/>
+			<span>Lead Developer at <a href="https://nodecraft.com?ref=okgamedev-multiplayer" target="_blank">NodeCraft.com</a></span>
+			<br/><br/>
+			<a href="http://gibhub.com/blazedd" target="_blank"><i class="fa fa-github"></i> gibhub.com/blazedd</a><br/>
+			<a href="http://twitter.com/blazedd" target="_blank"><i class="fa fa-twitter"></i> @blazedd</a><br/>
+			<a href="http://blazedd.com/" target="_blank"><i class="fa fa-globe"></i> blazedd.com</a>
+		</div>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Terminology</h2>
+			<ul>
+				<li class="next"><strong>Node:</strong> A physical or virtual machine on which server code is hosted.</li>
+				<li class="next"><strong>Server:</strong> The code which controls the multiplayer interaction. Manages the network between players and game activity.</li>
+				<li class="next"><strong>Client:</strong> The actual customer facing game. Clients connect to the server.</li>
+				<li class="next"><strong>Player:</strong> A gamer which is connected to the server, using the client.</li>
+				<li class="next"><strong>Noob:</strong> <a href="http://www.urbandictionary.com/define.php?term=Noob" target="_blank">UrbanDictionary.com/define.php?term=Noob</a></li>
+			</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2>Tonight's Topics</h2>
+			<ul>
+				<li>Finding Your Silver Bullet</li>
+				<li>Designing Your Netcode!</li>
+				<li>Troll Repellant</li>
+				<li>Supporting Gaming Communties</li>
+				<li>What Game Server Providers Want</li>
+			</ul>
+	</div></section>
+	<section class="slide" id="wolf"><div>
+		<h2>Finding Your Silver Bullet</h2>
+	</div></section>
+	<section class="slide" id="monsters"><div>
+		<h2><s>Finding Your Silver Bullet</s></h2>
+	</div></section>
+	<section class="slide tinker"><div>
+		<h2 class="halfline">Designing Your Netcode!</h2>
+		<ul>
+			<li class="next">Use a cross-platform codebase:
+				<ul>
+					<li>Java</li>
+					<li>Any C, C++</li>
+					<li>Python</li>
+					<li>Node.JS</li>
+				</ul>
+			</li>
+			<li class="next">Avoid Peer to Peer for competitive gameplay</li>
+			<li class="next">Separate client &amp; server code
+				<ul>
+					<li>Client manages controls and display</li>
+					<li>Server manages gameplay</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide tinker"><div>
+		<h2 class="halfline">Designing Your Netcode!</h2>
+		<ul>
+			<li class="next"><strong>Never</strong> trust the client
+				<ul>
+					<li>Provide data only as needed</li>
+					<li>Expect Hack clients</li>
+					<li>Expect out of date clients</li>
+				</ul>
+			</li>
+			<li class="next">Utilize the best network transit layers for the job
+				<ul>
+					<li>UDP - Fast, but potentially unreliable</li>
+					<li>TCP - Rock solid, structured, potentially slow</li>
+					<li>REST - Great for data/stat polling</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide" id="troll"><div>
+		<h2 class="halfline">Troll Repellant</h2>
+		<ul>
+			<li class="next">Network Attacks <strong>WILL</strong> happen
+				<ul>
+					<li>DoS / DDoS</li>
+					<li>Man in the Middle</li>
+				</ul>
+			</li>
+			<li class="next">Hack Detection
+				<ul>
+					<li>Client side detection almost always fails</li>
+					<li>Server side detection is king</li>
+				</ul>
+			</li>
+			<li class="next">Tracking Account Hopping
+				<ul>
+					<li>IP Address</li>
+					<li>Hardware Signature</li>
+				</ul>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2 class="halfline">Supporting Gaming Communties</h2>
+		<ul>
+			<li class="next">Mods/Plugins APIs are a MUST</li>
+			<li class="next">Effective player management</li>
+			<li class="next">Simple GUI for server managment</li>
+			<li class="next">File based config
+				<ol>
+					<li>TXT</li>
+					<li><a href="http://www.yaml.org/start.html" target="_blank">YAML</a></li>
+					<li><a href="https://developer.valvesoftware.com/wiki/KeyValues" target="_blank">KeyValues</a></li>
+					<li>JSON*</li>
+				</ol>
+			</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2 class="halfline">What Game Server Providers Want</h2>
+		<ul>
+			<li class="next">IP Address/Port management</li>
+			<li class="next"><a href="https://developer.valvesoftware.com/wiki/Source_RCON_Protocol" target="_blank">RCON Protocol</a> or similar status/query protocol</li>
+			<li class="next">Stateful process STDOUT</li>
+			<li class="next">Consistant Config format</li>
+			<li class="next">Linux Support</li>
+			<li class="next">Headless (nogui, terminal) process</li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2 class="halfline">Honorable Mentions: Libraries</h2>
+		<ul>
+			<li><a href="http://www.jenkinssoftware.com/raknet/manual/connecting.html" target="_blank">RakNet</a></li>
+			<li><a href="http://netty.io/" target="_blank">Netty</a></li>
+			<li><a href="http://pomelo.netease.com/" target="_blank">Pomelo</a></li>
+			<li><a href="http://pocoproject.org/index.html" target="_blank">Proco</a></li>
+			<li><a href="https://zeroc.com/overview.html" target="_blank">Ice</a> (licensed)</li>
+		</ul>
+		<br/><a href="http://www.codeofhonor.com/blog/choosing-a-game-network-lib" target="_blank">Read More about libraries</a>
+	</div></section>
+	<section class="slide"><div>
+		<h2 class="halfline">Honorable Mentions: Articles</h2>
+		<ul>
+			<li><strong><a href="http://ithare.com/64-network-dos-and-donts-for-game-engine-developers-part-i-client-side//" target="_blank">64 Network DO’s and DON’Ts for Game Engine Developers</a></strong></li>
+			<li><a href="http://gafferongames.com/networking-for-game-programmers/" target="_blank">Networking for Game Programmers</a></li>
+			<li><a href="https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking" target="_blank">Source Multiplayer Networking</a></li>
+			<li><a href="https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization" target="_blank">Latency Compensation</a></li>
+			<li><a href="http://www.wildbunny.co.uk/blog/2012/10/09/how-to-make-a-multi-player-game-part-1/" target="_blank">How to make a multi-player game</a></li>
+		</ul>
+	</div></section>
+	<section class="slide"><div>
+		<h2 class="halfline">Questions?</h2>
+			<br/>
+			<p>Slides and links available on <a href="http://gibhub.com/blazedd" target="_blank">Github.com/blazedd</a>.</p>
+	</div></section>
+	<div class="progress"><div></div></div>
+	<script src="shower/shower.min.js"></script>
+	<script src="highlight/highlight.pack.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

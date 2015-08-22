@@ -1,0 +1,84 @@
+#Cover{
+	background: url(pictures/cover.png) no-repeat center center;
+	background-size: cover;
+}
+#wolf{
+	background: #fff url(pictures/wolf.png) no-repeat center center;
+	background-size: cover;
+}
+#troll{
+	background: #fff url(pictures/troll.png) no-repeat center center;
+	background-size: cover;
+}
+#monsters{
+	background: #fff url(pictures/monsters.png) no-repeat center center;
+	background-size: cover;
+}
+.tinker{
+	background: #fff url(pictures/tinker.png) no-repeat top center;
+	background-size: cover;	
+}
+.list #Cover h2,.list #Cover p{
+	display: none;
+}
+#Cover h2{
+	margin: 20% 0 0;
+    color: #FFF;
+    text-align: center;
+    font-size: 70px;
+    font-family: "Open Sans";
+    font-weight: 500;
+    background-color: rgba(0,0,0,0.5);
+    padding: 15px 0 25px;
+}
+#Cover p{
+	margin: 0px auto 0;
+	text-align: center;
+	color: #FFF;
+	font-size: 20px;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+#Cover p a {
+	color:#FFF;
+}
+.slide .noline{
+	line-height: 1em;
+	margin-bottom: 0;
+}
+.slide .halfline{
+	line-height: 1.5em;
+	margin-bottom: 0;
+}
+.slide div img.original{
+	width: inherit !important;
+    height: inherit !important;
+}
+
+body > header.caption{
+	color: #fff;
+}
+body > header.caption h1{
+	font-family: "Open Sans";
+	font-weight: lighter;
+}
+body > header.caption:after{
+	content: "";
+	position: absolute;
+	top:0;
+	left:0;
+	right:0;
+	height: 200px;
+	background-color: #303131;
+	z-index: -1;
+}
+.slide code, .slide h2.console{
+	font-family: "Consolas";
+}
+pre code{
+	display: block;
+	white-space: 'normal';
+}
+.slide i.fa{
+	font-style: normal !important;
+}

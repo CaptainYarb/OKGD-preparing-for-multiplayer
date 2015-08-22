@@ -1,0 +1,13 @@
+{
+  "name": "network-test",
+  "version": "0.0.1",
+  "main": "index.html",
+  "node-remote": "localhost",
+  "window": {
+    "width": 850,
+    "height": 750
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
