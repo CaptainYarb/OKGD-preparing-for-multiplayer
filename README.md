@@ -15,21 +15,21 @@ You need nw.js and node installed for the client and server respectively. The co
 Honorable Mentions & Links:
 --------------------------
 
-**- Libraries**
-(RakNet)[http://www.jenkinssoftware.com/raknet/manual/connecting.html]
-(Netty)[http://netty.io/]
-(Pomelo)[http://pomelo.netease.com/]
-(Proco)[http://pocoproject.org/index.html]
-(Ice (licensed))[https://zeroc.com/overview.html]
-(More Details)[http://www.codeofhonor.com/blog/choosing-a-game-network-lib]
+**Libraries**
+- (RakNet)[http://www.jenkinssoftware.com/raknet/manual/connecting.html]
+- (Netty)[http://netty.io/]
+- (Pomelo)[http://pomelo.netease.com/]
+- (Proco)[http://pocoproject.org/index.html]
+- (Ice (licensed))[https://zeroc.com/overview.html]
+- (More Details)[http://www.codeofhonor.com/blog/choosing-a-game-network-lib]
 
 **Resources/Articles**
 
-(64 Network DO’s and DON’Ts for Game Engine Developers)[http://ithare.com/64-network-dos-and-donts-for-game-engine-developers-part-i-client-side/]
-(Networking for Game Programmers)[http://gafferongames.com/networking-for-game-programmers/]
-(Source Multiplayer Networking)[https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization]
-(Latency Compensation)[https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization]
-(How to make a multi-player game)[http://www.wildbunny.co.uk/blog/2012/10/09/how-to-make-a-multi-player-game-part-1/]
+- (64 Network DO’s and DON’Ts for Game Engine Developers)[http://ithare.com/64-network-dos-and-donts-for-game-engine-developers-part-i-client-side/]
+- (Networking for Game Programmers)[http://gafferongames.com/networking-for-game-programmers/]
+- (Source Multiplayer Networking)[https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization]
+-(Latency Compensation)[https://developer.valvesoftware.com/wiki/Latency_Compensating_Methods_in_Client/Server_In-game_Protocol_Design_and_Optimization]
+- (How to make a multi-player game)[http://www.wildbunny.co.uk/blog/2012/10/09/how-to-make-a-multi-player-game-part-1/]
 
 Known Issues
 ------------
